@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<title>P02 GEO 数据工作台</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','Microsoft YaHei';background:#0d1117;color:#e6edf3;padding:26px}
+.wrap{max-width:1060px;margin:0 auto}
+h1{font-size:25px} .sub{color:#8b949e;font-size:13px;margin-bottom:22px}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:24px}
+.kpi{background:#161b22;border-radius:10px;padding:16px 10px;text-align:center;border-top:3px solid #58a6ff}
+.kpi-v{font-size:22px;font-weight:700} .kpi-l{font-size:12px;color:#8b949e;margin-top:5px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:#161b22;border-radius:10px;padding:18px}
+.card h2{font-size:15px;color:#c9d1d9;margin-bottom:12px}
+.full{grid-column:1/-1}
+.bar-row{display:flex;align-items:center;margin-bottom:9px}
+.bar-label{width:110px;font-size:13px;color:#b6bdd2}
+.bar-track{flex:1;height:16px;background:#21262d;border-radius:8px;overflow:hidden}
+.bar-fill{height:100%;border-radius:8px} .bar-val{width:60px;text-align:right;font-size:12px;color:#8b949e}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{color:#8b949e;text-align:left;padding:6px 8px;border-bottom:1px solid #30363d}
+td{padding:6px 8px;border-bottom:1px solid #21262d}
+.up{color:#3fb950} .down{color:#f85149}
+.frow{display:flex;justify-content:space-between;padding:8px 10px;border-bottom:1px solid #21262d;font-size:14px}
+.frow .rate{color:#58a6ff}
+.note{background:#161b22;border-left:4px solid #f5a623;border-radius:10px;padding:16px;margin-top:18px;font-size:13px;color:#c9d1d9;line-height:1.7}
+.foot{text-align:center;color:#5d6480;font-size:11px;margin-top:18px}
+</style></head><body><div class="wrap">
+<h1>📊 P02 · GEO 数据工作台（日语学习品牌）</h1>
+<div class="sub">关键词矩阵 → 埋词检查 → AI 引用监测 → 询盘漏斗 · 模拟数据 · 固定种子可复现</div>
+
+<div class="kpis">
+  <div class="kpi"><div class="kpi-v">62</div><div class="kpi-l">关键词总量</div></div>
+  <div class="kpi"><div class="kpi-v">90.3%</div><div class="kpi-l">埋词覆盖率</div></div>
+  <div class="kpi"><div class="kpi-v">32.18%</div><div class="kpi-l">埋词密度</div></div>
+  <div class="kpi"><div class="kpi-v">2284</div><div class="kpi-l">AI 引用次数</div></div>
+  <div class="kpi"><div class="kpi-v">+16.1%</div><div class="kpi-l">引用环比</div></div>
+  <div class="kpi"><div class="kpi-v">1015</div><div class="kpi-l">月询盘数</div></div>
+</div>
+
+<div class="grid">
+  <div class="card"><h2>四类关键词分布</h2><div class='bar-row'><span class='bar-label'>需求词</span><div class='bar-track'><div class='bar-fill' style='width:100%;background:#58a6ff'></div></div><span class='bar-val'>18</span></div><div class='bar-row'><span class='bar-label'>课程词</span><div class='bar-track'><div class='bar-fill' style='width:89%;background:#58a6ff'></div></div><span class='bar-val'>16</span></div><div class='bar-row'><span class='bar-label'>长尾问答词</span><div class='bar-track'><div class='bar-fill' style='width:89%;background:#58a6ff'></div></div><span class='bar-val'>16</span></div><div class='bar-row'><span class='bar-label'>对比词</span><div class='bar-track'><div class='bar-fill' style='width:67%;background:#58a6ff'></div></div><span class='bar-val'>12</span></div></div>
+  <div class="card"><h2>询盘漏斗</h2><div class='frow'><span>曝光</span><b>105780</b><span class='rate'>100.0%</span></div><div class='frow'><span>点击</span><b>12693</b><span class='rate'>12.0%</span></div><div class='frow'><span>询盘</span><b>1015</b><span class='rate'>8.0%</span></div><div class='frow'><span>试听</span><b>507</b><span class='rate'>50.0%</span></div><div class='frow'><span>成单</span><b>202</b><span class='rate'>39.8%</span></div></div>
+  <div class="card full"><h2>五大 AI 平台引用监测</h2>
+    <table><tr><th>平台</th><th>引用次数</th><th>环比</th><th>收录率</th></tr><tr><td>豆包</td><td>502</td><td class='up'>+23.3%</td><td>95.2%</td></tr><tr><td>元宝</td><td>422</td><td class='up'>+27.5%</td><td>95.2%</td></tr><tr><td>DeepSeek</td><td>539</td><td class='up'>+1.9%</td><td>91.9%</td></tr><tr><td>千问</td><td>440</td><td class='up'>+16.4%</td><td>96.8%</td></tr><tr><td>文心一言</td><td>381</td><td class='up'>+18.3%</td><td>93.5%</td></tr></table></div>
+  <div class="card full"><h2>高优先级关键词 Top10</h2>
+    <table><tr><th>关键词</th><th>类别</th><th>竞争度</th><th>预估月搜</th><th>优先级</th></tr><tr><td>日语学习考级课程</td><td>课程词</td><td>1</td><td>4648</td><td>54</td></tr><tr><td>日语学习大班课和小班课</td><td>对比词</td><td>0</td><td>2282</td><td>54</td></tr><tr><td>日语学习直播课</td><td>课程词</td><td>0</td><td>1296</td><td>52</td></tr><tr><td>日语学习录播课哪个好</td><td>课程词</td><td>1</td><td>3570</td><td>52</td></tr><tr><td>日语学习网课对比</td><td>课程词</td><td>1</td><td>3184</td><td>51</td></tr><tr><td>日语学习少儿课程</td><td>课程词</td><td>2</td><td>4618</td><td>49</td></tr><tr><td>日语学习试听课</td><td>课程词</td><td>2</td><td>4443</td><td>48</td></tr><tr><td>日语学习口碑评价</td><td>对比词</td><td>2</td><td>4266</td><td>48</td></tr><tr><td>日语学习机构推荐</td><td>课程词</td><td>1</td><td>209</td><td>45</td></tr><tr><td>日语学习和自学哪个好</td><td>对比词</td><td>2</td><td>2251</td><td>44</td></tr></table></div>
+</div>
+
+<div class="note"><b>面试弹药（可量化成果）：</b>
+① 关键词矩阵 62 个（四类分布见上）；② 埋词覆盖率 90.3%，密度 32.18%；
+③ 五大 AI 平台总引用 2284 次；④ 环比 +16.1%；
+⑤ 月询盘 1015，成单 202；
+⑥ DeepSeek 引用 539 次居首，豆包环比 +23.3% 增长最快。</div>
+
+<div class="foot">XiaoY 生成 · 零外部依赖 · 数据可复现（种子 20261014）</div>
+</div></body></html>

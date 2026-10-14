@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI应用开发 · 展示首页</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','Microsoft YaHei';background:#0d1117;color:#e6edf3;padding:40px 24px}
+.wrap{max-width:720px;margin:0 auto}
+h1{font-size:28px;margin-bottom:6px}
+.sub{color:#8b949e;font-size:14px;margin-bottom:32px}
+.card{display:block;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:24px;text-decoration:none;color:inherit;transition:.2s}
+.card:hover{border-color:#58a6ff;transform:translateY(-2px)}
+.card h2{font-size:19px;margin-bottom:8px;color:#58a6ff}
+.card p{font-size:14px;color:#b6bdd2;line-height:1.6}
+.tag{display:inline-block;background:#1f6feb33;color:#58a6ff;border-radius:20px;padding:2px 10px;font-size:12px;margin-bottom:10px}
+.nums{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.num{background:#21262d;border-radius:8px;padding:6px 10px;font-size:13px;color:#c9d1d9}
+.note{background:#161b22;border-left:4px solid #f5a623;border-radius:10px;padding:16px;font-size:13px;color:#c9d1d9;line-height:1.7;margin-top:18px}
+.foot{text-align:center;color:#5d6480;font-size:12px;margin-top:28px}
+</style></head>
+<body><div class="wrap">
+<h1>💻 AI 应用开发</h1>
+<div class="sub">岗位线：AI 应用工程师 / Agent 开发 / Vibe Coding · 求职展示</div>
+
+<a class="card" href="../02-项目/P03-RAG问答/dashboard.html">
+  <span class="tag">P03 · RAG 问答系统</span>
+  <h2>检索增强生成（RAG）最小应用</h2>
+  <p>纯 Python 从 0 实现：文档切分 → TF-IDF 向量化 → 余弦检索 → 生成，全链路可跑、可验证。</p>
+  <div class="nums">
+    <span class="num">10 个文档块</span>
+    <span class="num">TF-IDF 226 维</span>
+    <span class="num">检索自检 4/4</span>
+    <span class="num">相似度最高 1.000</span>
+  </div>
+</a>
+
+<div class="note"><b>这条线还要补的能力：</b>① LLM API 真调（接口已预留）；② 部署上线；③ 多一个 Agent/工具调用项目。</div>
+<div class="foot">XiaoY 生成 · 点卡片打开看板</div>
+</div></body></html>

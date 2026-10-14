@@ -1,0 +1,6 @@
+中文写入测试：货位分配与拣货路径优化
+python-docx 可用性检查：
+- docx 1.2.0
+- openpyxl 3.1.5
+- numpy 2.3.5
+- pandas 3.0.1

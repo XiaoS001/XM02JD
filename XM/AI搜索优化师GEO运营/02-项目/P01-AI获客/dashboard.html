@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 获客全流程 · 数据看板</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI','Microsoft YaHei',sans-serif; background:#0f1220; color:#e8eaf0; padding:28px; }
+  .wrap { max-width:1000px; margin:0 auto; }
+  h1 { font-size:26px; margin-bottom:4px; }
+  .sub { color:#8a91a8; font-size:14px; margin-bottom:24px; }
+  .kpis { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:28px; }
+  .kpi { background:#1a1e30; border-radius:12px; padding:18px 14px; text-align:center; }
+  .kpi-v { font-size:30px; font-weight:700; }
+  .kpi-l { font-size:13px; color:#8a91a8; margin-top:6px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:28px; }
+  .card { background:#1a1e30; border-radius:12px; padding:20px; }
+  .card h2 { font-size:16px; margin-bottom:14px; color:#c8cde0; }
+  .full { grid-column:1 / -1; }
+  .bar-row { display:flex; align-items:center; margin-bottom:10px; }
+  .bar-label { width:80px; font-size:13px; color:#b6bdd2; flex-shrink:0; }
+  .bar-track { flex:1; height:18px; background:#252a40; border-radius:9px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:9px; }
+  .bar-val { width:90px; text-align:right; font-size:12px; color:#8a91a8; }
+  .empty { color:#6b7190; font-size:13px; }
+  .msg { background:#1a1e30; border-radius:12px; padding:20px; margin-bottom:28px; border-left:4px solid #4f8cff; }
+  .msg p { font-size:14px; line-height:1.7; color:#d5d9e8; }
+  .foot { text-align:center; color:#5d6480; font-size:12px; margin-top:20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🤖 AI 获客全流程 · 数据看板</h1>
+  <div class="sub">P01 练手项目 · 六段 Pipeline（数据源→采集→清洗→分级→触达→追踪）· 模拟数据 · mock 触达</div>
+
+  <div class="kpis">
+    <div class="kpi" style="border-top:4px solid #4f8cff"><div class="kpi-v">122</div><div class="kpi-l">原始企业</div></div>
+    <div class="kpi" style="border-top:4px solid #5aa9e6"><div class="kpi-v">120</div><div class="kpi-l">清洗后线索</div></div>
+    <div class="kpi" style="border-top:4px solid #7fc8f8"><div class="kpi-v">100</div><div class="kpi-l">可触达(A/B)</div></div>
+    <div class="kpi" style="border-top:4px solid #a5e0c0"><div class="kpi-v">21</div><div class="kpi-l">有意向</div></div>
+    <div class="kpi" style="border-top:4px solid #c9e79d"><div class="kpi-v">9</div><div class="kpi-l">成交</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="card full">
+      <h2>转化漏斗（120 → 成交）</h2>
+      <svg viewBox="0 0 620 360.0" width="100%" height="420"><polygon points="0.0,50.0 620.0,50.0 608.0,95.24000000000001 12.0,95.24000000000001" fill="#4f8cff" opacity="0.9"/><text x="310.0" y="76.62" text-anchor="middle" font-size="14" fill="#1a1a2e" font-weight="600">总线索：120</text><polygon points="51.66666666666663,108.0 568.3333333333334,108.0 556.3333333333334,153.24 63.66666666666663,153.24" fill="#5aa9e6" opacity="0.9"/><text x="310.0" y="134.62" text-anchor="middle" font-size="14" fill="#1a1a2e" font-weight="600">A/B级可触达：100</text><polygon points="217.0,166.0 403.0,166.0 391.0,211.24 229.0,211.24" fill="#7fc8f8" opacity="0.9"/><text x="310.0" y="192.62" text-anchor="middle" font-size="14" fill="#1a1a2e" font-weight="600">响应：36</text><polygon points="255.75,224.0 364.25,224.0 352.25,269.24 267.75,269.24" fill="#a5e0c0" opacity="0.9"/><text x="310.0" y="250.62" text-anchor="middle" font-size="14" fill="#1a1a2e" font-weight="600">有意向：21</text><polygon points="286.75,282.0 333.25,282.0 321.25,327.24 298.75,327.24" fill="#c9e79d" opacity="0.9"/><text x="310.0" y="308.62" text-anchor="middle" font-size="14" fill="#1a1a2e" font-weight="600">成交：9</text></svg>
+    </div>
+    <div class="card">
+      <h2>线索等级分布</h2>
+      <div class='bar-row'><span class='bar-label'>A</span><div class='bar-track'><div class='bar-fill' style='width:35.8%;background:#4f8cff'></div></div><span class='bar-val'>43（35.8%）</span></div><div class='bar-row'><span class='bar-label'>B</span><div class='bar-track'><div class='bar-fill' style='width:47.5%;background:#4f8cff'></div></div><span class='bar-val'>57（47.5%）</span></div><div class='bar-row'><span class='bar-label'>C</span><div class='bar-track'><div class='bar-fill' style='width:16.7%;background:#4f8cff'></div></div><span class='bar-val'>20（16.7%）</span></div>
+    </div>
+    <div class="card">
+      <h2>行业分布 Top8</h2>
+      <div class='bar-row'><span class='bar-label'>电商</span><div class='bar-track'><div class='bar-fill' style='width:10.0%;background:#f5a623'></div></div><span class='bar-val'>12（10.0%）</span></div><div class='bar-row'><span class='bar-label'>SaaS</span><div class='bar-track'><div class='bar-fill' style='width:10.0%;background:#f5a623'></div></div><span class='bar-val'>12（10.0%）</span></div><div class='bar-row'><span class='bar-label'>本地服务</span><div class='bar-track'><div class='bar-fill' style='width:10.0%;background:#f5a623'></div></div><span class='bar-val'>12（10.0%）</span></div><div class='bar-row'><span class='bar-label'>教育</span><div class='bar-track'><div class='bar-fill' style='width:10.0%;background:#f5a623'></div></div><span class='bar-val'>12（10.0%）</span></div><div class='bar-row'><span class='bar-label'>金融</span><div class='bar-track'><div class='bar-fill' style='width:10.0%;background:#f5a623'></div></div><span class='bar-val'>12（10.0%）</span></div><div class='bar-row'><span class='bar-label'>医疗</span><div class='bar-track'><div class='bar-fill' style='width:10.0%;background:#f5a623'></div></div><span class='bar-val'>12（10.0%）</span></div><div class='bar-row'><span class='bar-label'>制造业</span><div class='bar-track'><div class='bar-fill' style='width:10.0%;background:#f5a623'></div></div><span class='bar-val'>12（10.0%）</span></div><div class='bar-row'><span class='bar-label'>物流</span><div class='bar-track'><div class='bar-fill' style='width:10.0%;background:#f5a623'></div></div><span class='bar-val'>12（10.0%）</span></div>
+    </div>
+    <div class="card full">
+      <h2>企业规模分布</h2>
+      <div class='bar-row'><span class='bar-label'>大型</span><div class='bar-track'><div class='bar-fill' style='width:25.0%;background:#7fc8f8'></div></div><span class='bar-val'>30（25.0%）</span></div><div class='bar-row'><span class='bar-label'>中型</span><div class='bar-track'><div class='bar-fill' style='width:25.0%;background:#7fc8f8'></div></div><span class='bar-val'>30（25.0%）</span></div><div class='bar-row'><span class='bar-label'>小型</span><div class='bar-track'><div class='bar-fill' style='width:25.0%;background:#7fc8f8'></div></div><span class='bar-val'>30（25.0%）</span></div><div class='bar-row'><span class='bar-label'>微型</span><div class='bar-track'><div class='bar-fill' style='width:25.0%;background:#7fc8f8'></div></div><span class='bar-val'>30（25.0%）</span></div>
+    </div>
+  </div>
+
+  <div class="msg">
+    <h2 style="margin-bottom:8px">📨 个性化触达样例（mock，未真发）</h2>
+    <p>上海SaaS科技001号（上海）的负责人您好，看到贵司在SaaS领域深耕，我们有一款针对订阅客户续费的 AI 工具，已帮助多家小型企业提升获客效率。方便的话想约您 15 分钟聊聊。</p>
+  </div>
+
+  <div class="foot">由 XiaoY 生成 · 数据可复现（固定随机种子 20261014）· 零外部依赖</div>
+</div>
+</body>
+</html>

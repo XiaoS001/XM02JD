@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 调试残留
+_dbg.*
+_*debug*
+*.tmp
+
+# 系统垃圾
+%SystemDrive%/
+Thumbs.db
+desktop.ini
+
+# 敏感配置（含密码不提交）
+application-local.yml
+
+# 项目中间产物（可再生成）
+**/data/*
+!**/data/.gitkeep

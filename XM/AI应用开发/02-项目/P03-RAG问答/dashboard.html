@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<title>P03 RAG 问答系统 · 看板</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','Microsoft YaHei';background:#0d1117;color:#e6edf3;padding:28px}
+.wrap{max-width:960px;margin:0 auto}
+h1{font-size:24px} .sub{color:#8b949e;font-size:13px;margin-bottom:22px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:26px}
+.step{background:#161b22;border-radius:10px;padding:16px 12px;text-align:center}
+.step-n{font-size:20px;font-weight:700;color:#58a6ff}
+.step-t{font-size:14px;font-weight:600;margin:4px 0}
+.step-d{font-size:12px;color:#8b949e}
+.qa{background:#161b22;border-radius:10px;padding:18px;margin-bottom:16px}
+.q{font-size:15px;font-weight:600;margin-bottom:10px}
+.sim-badge{display:inline-block;background:#1f6feb33;color:#58a6ff;border-radius:20px;padding:3px 12px;font-size:13px;margin-bottom:10px}
+.hits{display:flex;flex-direction:column;gap:6px}
+.hit{background:#21262d;border-radius:8px;padding:8px 12px;font-size:13px;color:#c9d1d9}
+.sim{color:#58a6ff;font-weight:700;margin-right:10px}
+.card{background:#161b22;border-radius:10px;padding:18px;margin-bottom:16px}
+.card h2{font-size:15px;margin-bottom:12px;color:#c9d1d9}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{color:#8b949e;text-align:left;padding:6px 10px;border-bottom:1px solid #30363d}
+td{padding:6px 10px;border-bottom:1px solid #21262d}
+.ok{color:#3fb950} .bad{color:#f85149}
+.note{background:#161b22;border-left:4px solid #f5a623;border-radius:10px;padding:16px;font-size:13px;color:#c9d1d9;line-height:1.7}
+.foot{text-align:center;color:#5d6480;font-size:11px;margin-top:18px}
+</style></head><body><div class="wrap">
+<h1>🔍 P03 · RAG 问答系统看板</h1>
+<div class="sub">检索增强生成 · 纯 Python 实现（切分→向量化→检索→生成）· 离线可跑</div>
+
+<div class="steps"><div class='step' style='border-top:4px solid #4f8cff'><div class='step-n'>1</div><div class='step-t'>M1 文档切分</div><div class='step-d'>10 个块</div></div><div class='step' style='border-top:4px solid #5aa9e6'><div class='step-n'>2</div><div class='step-t'>M2 向量化</div><div class='step-d'>TF-IDF · 226 维</div></div><div class='step' style='border-top:4px solid #7fc8f8'><div class='step-n'>3</div><div class='step-t'>M3 检索</div><div class='step-d'>余弦相似度 Top3</div></div><div class='step' style='border-top:4px solid #a5e0c0'><div class='step-n'>4</div><div class='step-t'>M4 生成</div><div class='step-d'>检索拼接 / LLM</div></div></div>
+
+<h2 style="font-size:16px;margin-bottom:12px;color:#c9d1d9">演示问答（检索结果 + 相似度）</h2>
+
+        <div class="qa">
+          <div class="q">❓ RAG 是什么？</div>
+          <div class="sim-badge">最高相似度 0.435</div>
+          <div class="hits"><div class='hit'><span class='sim'>0.43</span>块。第四步，生成，把检索到的块作为上下文交给大模型生成回答。向量化常用 embedding 模型，例如 OpenAI 的 text-embe…</div><div class='hit'><span class='sim'>0.34</span>机器人、智能问答系统、RAG 知识库、AI Agent 等。RAG 是检索增强生成的缩写，英文是 Retrieval-Augmented G…</div><div class='hit'><span class='sim'>0.32</span>t 辅助开发，比如 Claude Code、Codex 等。第二，能验证 AI 输出的正确性，对最终交付结果负责。第三，掌握 LLM API…</div></div>
+        </div>
+        <div class="qa">
+          <div class="q">❓ AI 应用开发工程师需要什么技能？</div>
+          <div class="sim-badge">最高相似度 1.000</div>
+          <div class="hits"><div class='hit'><span class='sim'>1.00</span>t 辅助开发，比如 Claude Code、Codex 等。第二，能验证 AI 输出的正确性，对最终交付结果负责。第三，掌握 LLM API…</div><div class='hit'><span class='sim'>0.97</span>（幻觉）的问题，让回答有据可依。RAG 的标准流程分为四步。第一步，文档加载和切分，把长文档切成小块。第二步，向量化，把文本块转成向量表示。…</div><div class='hit'><span class='sim'>0.93</span>机器人、智能问答系统、RAG 知识库、AI Agent 等。RAG 是检索增强生成的缩写，英文是 Retrieval-Augmented G…</div></div>
+        </div>
+        <div class="qa">
+          <div class="q">❓ 大模型 API 怎么调用？</div>
+          <div class="sim-badge">最高相似度 0.723</div>
+          <div class="hits"><div class='hit'><span class='sim'>0.72</span>块。第四步，生成，把检索到的块作为上下文交给大模型生成回答。向量化常用 embedding 模型，例如 OpenAI 的 text-embe…</div><div class='hit'><span class='sim'>0.71</span>角色。流式输出用 stream 参数控制，可以逐字返回结果。AI 应用开发与 AI 算法研究的区别在于：。应用开发使用现成的模型做产品，重点…</div><div class='hit'><span class='sim'>0.70</span>大模型 API 调用通常使用 OpenAI 兼容的接口格式。请求包含 model、messages 等字段，messages 里包含 sys…</div></div>
+        </div>
+
+<div class="card">
+  <h2>检索命中自检</h2>
+  <table><tr><th>问题</th><th>结果</th></tr><tr><td>RAG 是什么</td><td class='ok'>✅ 命中</td></tr><tr><td>向量化用什么 embedding</td><td class='ok'>✅ 命中</td></tr><tr><td>AI 应用开发要什么技能</td><td class='ok'>✅ 命中</td></tr><tr><td>API 调用什么格式</td><td class='ok'>✅ 命中</td></tr></table>
+</div>
+
+<div class="note"><b>面试要点：</b>
+① RAG = 先从知识库检索相关片段，再让 LLM 基于片段生成，解决幻觉问题；
+② 我踩过并修掉"词袋被高频词稀释"的坑（改用 TF-IDF，相似度 0.865→1.000）；
+③ 词袋不做语义理解，真实生产要用 embedding 模型——这是本项目的已知局限，也是下一步升级点。</div>
+
+<div class="foot">XiaoY 生成 · 零外部依赖 · 数据可复现</div>
+</div></body></html>
