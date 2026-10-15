@@ -6,6 +6,7 @@ __pycache__/
 # 调试残留
 _dbg.*
 _*debug*
+_*.html
 *.tmp
 
 # 系统垃圾
@@ -13,9 +14,16 @@ _*debug*
 Thumbs.db
 desktop.ini
 
-# 敏感配置（含密码不提交）
+# 敏感配置
 application-local.yml
 
 # 项目中间产物（可再生成）
 **/data/*
 !**/data/.gitkeep
+
+# 大文件（学习用的原始包，源码已解压归档）
+*.tar.gz
+*.zip
+
+# 渲染截图（可再生成，但保留小体积的用于文档引用）
+# 注：render/ 下的关键截图保留，如需清理可手动删除

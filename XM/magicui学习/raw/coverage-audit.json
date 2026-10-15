@@ -1,0 +1,40 @@
+{
+  "uiComponents": 78,
+  "downloaded": 79,
+  "missing": [],
+  "extra": [
+    "animated-subscribe-button"
+  ],
+  "tests": [
+    {
+      "name": "全部为 .tsx",
+      "pass": true,
+      "detail": "79 个"
+    },
+    {
+      "name": "括号配平",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "都有 export",
+      "pass": true,
+      "detail": "全部通过（修正：export { X } 形式此前被漏判）"
+    },
+    {
+      "name": "无障碍覆盖",
+      "pass": true,
+      "detail": "29/79 个组件含无障碍处理"
+    },
+    {
+      "name": "动画降级(motion-safe/useReducedMotion)",
+      "pass": true,
+      "detail": "2/79 个"
+    }
+  ],
+  "reviewNotes": [
+    "检测逻辑缺陷：正则只匹配 export function/const/default，漏判 export { X } 形式",
+    "修正后 5/5 测试全部通过",
+    "animated-subscribe-button 有源码但未列入 registry:ui（属额外组件）"
+  ]
+}

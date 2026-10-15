@@ -1,0 +1,82 @@
+[
+  {
+    "name": "视觉: 大字标题 clamp 82px",
+    "pass": true,
+    "detail": "5/5 界面"
+  },
+  {
+    "name": "视觉: 22px 大圆角",
+    "pass": true,
+    "detail": "5/5 界面"
+  },
+  {
+    "name": "视觉: 快出慢入缓动 .2,.8,.2,1",
+    "pass": true,
+    "detail": "5/5 界面"
+  },
+  {
+    "name": "视觉: 网格背景 48px",
+    "pass": true,
+    "detail": "5/5 界面"
+  },
+  {
+    "name": "视觉: 中文宋体标题",
+    "pass": true,
+    "detail": "5/5 界面"
+  },
+  {
+    "name": "视觉: 卡片 42px 内边距",
+    "pass": true,
+    "detail": "5/5 界面"
+  },
+  {
+    "name": "视觉: section 100px 间距",
+    "pass": true,
+    "detail": "5/5 界面"
+  },
+  {
+    "name": "功能: 滚动渐显",
+    "pass": true,
+    "detail": "5/5"
+  },
+  {
+    "name": "功能: 数字滚动",
+    "pass": true,
+    "detail": "5/5"
+  },
+  {
+    "name": "功能: 进度条",
+    "pass": true,
+    "detail": "5/5"
+  },
+  {
+    "name": "功能: 错峰延迟",
+    "pass": true,
+    "detail": "5/5"
+  },
+  {
+    "name": "功能: 条形图进场",
+    "pass": true,
+    "detail": "5/5"
+  },
+  {
+    "name": "无障碍: prefers-reduced-motion",
+    "pass": true,
+    "detail": "5/5"
+  },
+  {
+    "name": "无障碍: noscript 降级",
+    "pass": true,
+    "detail": "5/5"
+  },
+  {
+    "name": "数字初始值为终值（JS失效可见）",
+    "pass": true,
+    "detail": "data-count 与显示值一致"
+  },
+  {
+    "name": "渲染验证截图",
+    "pass": true,
+    "detail": "5 张"
+  }
+]

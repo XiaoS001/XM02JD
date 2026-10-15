@@ -1,0 +1,107 @@
+[
+  {
+    "name": "首页 HTML 完整",
+    "pass": true,
+    "detail": "70.1KB"
+  },
+  {
+    "name": "CSS 完整",
+    "pass": true,
+    "detail": "73.0KB"
+  },
+  {
+    "name": "guide 页完整",
+    "pass": true,
+    "detail": "55.5KB"
+  },
+  {
+    "name": "changelog 页完整",
+    "pass": true,
+    "detail": "17.9KB"
+  },
+  {
+    "name": "设计变量齐全",
+    "pass": true,
+    "detail": ":root --bg --red --serif --sans"
+  },
+  {
+    "name": "keyframes 数量 = 25",
+    "pass": true,
+    "detail": "实际 25"
+  },
+  {
+    "name": "reveal-on-scroll 存在",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "is-visible 状态定义",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "prefers-reduced-motion",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "图片 alt 全覆盖",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "lang 属性",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "canonical 链接",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "OG 标签",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "JSON-LD 结构化数据",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "sitemap 存在",
+    "pass": true,
+    "detail": "5 个 URL"
+  },
+  {
+    "name": "robots.txt 存在",
+    "pass": true,
+    "detail": "Allow: /"
+  },
+  {
+    "name": "JS 体积 < 5KB",
+    "pass": true,
+    "detail": "3.38KB"
+  },
+  {
+    "name": "图片懒加载",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "scroll 监听 passive",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "内联 SVG 图标",
+    "pass": true,
+    "detail": "94 个"
+  },
+  {
+    "name": "原站无 JS 降级（缺陷）",
+    "pass": true,
+    "detail": "已确认：无 noscript → JS失败则内容不可见"
+  }
+]

@@ -1,0 +1,1993 @@
+{
+  "total": 250,
+  "byType": {
+    "registry:style": 1,
+    "registry:ui": 78,
+    "registry:example": 170,
+    "registry:lib": 1
+  },
+  "components": [
+    {
+      "name": "magic-card",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion",
+        "next-themes"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/magic-card.tsx"
+      ]
+    },
+    {
+      "name": "android",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/android.tsx"
+      ]
+    },
+    {
+      "name": "warp-background",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/warp-background.tsx"
+      ]
+    },
+    {
+      "name": "line-shadow-text",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/line-shadow-text.tsx"
+      ]
+    },
+    {
+      "name": "aurora-text",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/aurora-text.tsx"
+      ]
+    },
+    {
+      "name": "morphing-text",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/morphing-text.tsx"
+      ]
+    },
+    {
+      "name": "scroll-progress",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/scroll-progress.tsx"
+      ]
+    },
+    {
+      "name": "lens",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/lens.tsx"
+      ]
+    },
+    {
+      "name": "pointer",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/pointer.tsx"
+      ]
+    },
+    {
+      "name": "smooth-cursor",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/smooth-cursor.tsx"
+      ]
+    },
+    {
+      "name": "progressive-blur",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/progressive-blur.tsx"
+      ]
+    },
+    {
+      "name": "neon-gradient-card",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/neon-gradient-card.tsx"
+      ]
+    },
+    {
+      "name": "noise-texture",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/noise-texture.tsx"
+      ]
+    },
+    {
+      "name": "meteors",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/meteors.tsx"
+      ]
+    },
+    {
+      "name": "grid-pattern",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/grid-pattern.tsx"
+      ]
+    },
+    {
+      "name": "hexagon-pattern",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/hexagon-pattern.tsx"
+      ]
+    },
+    {
+      "name": "striped-pattern",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/striped-pattern.tsx"
+      ]
+    },
+    {
+      "name": "interactive-grid-pattern",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/interactive-grid-pattern.tsx"
+      ]
+    },
+    {
+      "name": "dot-pattern",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/dot-pattern.tsx"
+      ]
+    },
+    {
+      "name": "flickering-grid",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/flickering-grid.tsx"
+      ]
+    },
+    {
+      "name": "hero-video-dialog",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/hero-video-dialog.tsx"
+      ]
+    },
+    {
+      "name": "code-comparison",
+      "type": "registry:ui",
+      "dependencies": [
+        "shiki",
+        "next-themes"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/code-comparison.tsx"
+      ]
+    },
+    {
+      "name": "marquee",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/marquee.tsx"
+      ]
+    },
+    {
+      "name": "globe",
+      "type": "registry:ui",
+      "dependencies": [
+        "cobe@^0.6.4",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/globe.tsx"
+      ]
+    },
+    {
+      "name": "glyph-matrix",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/glyph-matrix.tsx"
+      ]
+    },
+    {
+      "name": "glare-hover",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/glare-hover.tsx"
+      ]
+    },
+    {
+      "name": "shimmer-button",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/shimmer-button.tsx"
+      ]
+    },
+    {
+      "name": "tweet-card",
+      "type": "registry:ui",
+      "dependencies": [
+        "react-tweet"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/tweet-card.tsx"
+      ]
+    },
+    {
+      "name": "client-tweet-card",
+      "type": "registry:ui",
+      "dependencies": [
+        "react-tweet"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/client-tweet-card.tsx"
+      ]
+    },
+    {
+      "name": "bento-grid",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-icons"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "registry/magicui/bento-grid.tsx"
+      ]
+    },
+    {
+      "name": "particles",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/particles.tsx"
+      ]
+    },
+    {
+      "name": "number-ticker",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/number-ticker.tsx"
+      ]
+    },
+    {
+      "name": "ripple",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/ripple.tsx"
+      ]
+    },
+    {
+      "name": "retro-grid",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/retro-grid.tsx"
+      ]
+    },
+    {
+      "name": "animated-list",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/animated-list.tsx"
+      ]
+    },
+    {
+      "name": "animated-shiny-text",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/animated-shiny-text.tsx"
+      ]
+    },
+    {
+      "name": "animated-grid-pattern",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/animated-grid-pattern.tsx"
+      ]
+    },
+    {
+      "name": "border-beam",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/border-beam.tsx"
+      ]
+    },
+    {
+      "name": "animated-beam",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/animated-beam.tsx"
+      ]
+    },
+    {
+      "name": "text-reveal",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/text-reveal.tsx"
+      ]
+    },
+    {
+      "name": "dia-text-reveal",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/dia-text-reveal.tsx"
+      ]
+    },
+    {
+      "name": "hyper-text",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/hyper-text.tsx"
+      ]
+    },
+    {
+      "name": "animated-gradient-text",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/animated-gradient-text.tsx"
+      ]
+    },
+    {
+      "name": "orbiting-circles",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/orbiting-circles.tsx"
+      ]
+    },
+    {
+      "name": "dock",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/dock.tsx"
+      ]
+    },
+    {
+      "name": "word-rotate",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/word-rotate.tsx"
+      ]
+    },
+    {
+      "name": "avatar-circles",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/avatar-circles.tsx"
+      ]
+    },
+    {
+      "name": "typing-animation",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/typing-animation.tsx"
+      ]
+    },
+    {
+      "name": "sparkles-text",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/sparkles-text.tsx"
+      ]
+    },
+    {
+      "name": "spinning-text",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/spinning-text.tsx"
+      ]
+    },
+    {
+      "name": "comic-text",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/comic-text.tsx"
+      ]
+    },
+    {
+      "name": "icon-cloud",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "registry/magicui/icon-cloud.tsx"
+      ]
+    },
+    {
+      "name": "text-animate",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/text-animate.tsx"
+      ]
+    },
+    {
+      "name": "scroll-based-velocity",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/scroll-based-velocity.tsx"
+      ]
+    },
+    {
+      "name": "shiny-button",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/shiny-button.tsx"
+      ]
+    },
+    {
+      "name": "shine-border",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/shine-border.tsx"
+      ]
+    },
+    {
+      "name": "animated-circular-progress-bar",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/animated-circular-progress-bar.tsx"
+      ]
+    },
+    {
+      "name": "confetti",
+      "type": "registry:ui",
+      "dependencies": [
+        "canvas-confetti",
+        "@types/canvas-confetti"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "registry/magicui/confetti.tsx"
+      ]
+    },
+    {
+      "name": "cool-mode",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/cool-mode.tsx"
+      ]
+    },
+    {
+      "name": "pulsating-button",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/pulsating-button.tsx"
+      ]
+    },
+    {
+      "name": "ripple-button",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/ripple-button.tsx"
+      ]
+    },
+    {
+      "name": "file-tree",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/file-tree.tsx"
+      ]
+    },
+    {
+      "name": "blur-fade",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/blur-fade.tsx"
+      ]
+    },
+    {
+      "name": "safari",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/safari.tsx"
+      ]
+    },
+    {
+      "name": "iphone",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/iphone.tsx"
+      ]
+    },
+    {
+      "name": "rainbow-button",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/rainbow-button.tsx"
+      ]
+    },
+    {
+      "name": "interactive-hover-button",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/interactive-hover-button.tsx"
+      ]
+    },
+    {
+      "name": "terminal",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/terminal.tsx"
+      ]
+    },
+    {
+      "name": "video-text",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/video-text.tsx"
+      ]
+    },
+    {
+      "name": "pixel-image",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/pixel-image.tsx"
+      ]
+    },
+    {
+      "name": "highlighter",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion",
+        "rough-notation"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/highlighter.tsx"
+      ]
+    },
+    {
+      "name": "animated-theme-toggler",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/animated-theme-toggler.tsx"
+      ]
+    },
+    {
+      "name": "light-rays",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/light-rays.tsx"
+      ]
+    },
+    {
+      "name": "dotted-map",
+      "type": "registry:ui",
+      "dependencies": [
+        "svg-dotted-map"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/dotted-map.tsx"
+      ]
+    },
+    {
+      "name": "backlight",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/backlight.tsx"
+      ]
+    },
+    {
+      "name": "kinetic-text",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/kinetic-text.tsx"
+      ]
+    },
+    {
+      "name": "text-3d-flip",
+      "type": "registry:ui",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/text-3d-flip.tsx"
+      ]
+    },
+    {
+      "name": "floating-3d-particles",
+      "type": "registry:ui",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "registry/magicui/floating-3d-particles.tsx"
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "name": "magic-card-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/magic-card-demo.tsx"
+      ]
+    },
+    {
+      "name": "magic-card-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/magic-card-demo2.tsx"
+      ]
+    },
+    {
+      "name": "android-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/android-demo.tsx"
+      ]
+    },
+    {
+      "name": "android-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/android-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "android-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/android-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "warp-background-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/warp-background-demo.tsx"
+      ]
+    },
+    {
+      "name": "line-shadow-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/line-shadow-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "aurora-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/aurora-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "morphing-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/morphing-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "scroll-progress-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/scroll-progress-demo.tsx"
+      ]
+    },
+    {
+      "name": "lens-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/lens-demo.tsx"
+      ]
+    },
+    {
+      "name": "lens-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/lens-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "lens-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/lens-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "pointer-demo-1",
+      "type": "registry:example",
+      "files": [
+        "registry/example/pointer-demo-1.tsx"
+      ]
+    },
+    {
+      "name": "smooth-cursor-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/smooth-cursor-demo.tsx"
+      ]
+    },
+    {
+      "name": "progressive-blur-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/progressive-blur-demo.tsx"
+      ]
+    },
+    {
+      "name": "neon-gradient-card-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/neon-gradient-card-demo.tsx"
+      ]
+    },
+    {
+      "name": "noise-texture-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/noise-texture-demo.tsx"
+      ]
+    },
+    {
+      "name": "noise-texture-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/noise-texture-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "noise-texture-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/noise-texture-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "noise-texture-demo-4",
+      "type": "registry:example",
+      "files": [
+        "registry/example/noise-texture-demo-4.tsx"
+      ]
+    },
+    {
+      "name": "meteors-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/meteors-demo.tsx"
+      ]
+    },
+    {
+      "name": "grid-pattern-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/grid-pattern-demo.tsx"
+      ]
+    },
+    {
+      "name": "striped-pattern-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/striped-pattern-demo.tsx"
+      ]
+    },
+    {
+      "name": "striped-pattern-dashed",
+      "type": "registry:example",
+      "files": [
+        "registry/example/striped-pattern-dashed.tsx"
+      ]
+    },
+    {
+      "name": "striped-pattern-right",
+      "type": "registry:example",
+      "files": [
+        "registry/example/striped-pattern-right.tsx"
+      ]
+    },
+    {
+      "name": "grid-pattern-linear-gradient",
+      "type": "registry:example",
+      "files": [
+        "registry/example/grid-pattern-linear-gradient.tsx"
+      ]
+    },
+    {
+      "name": "grid-pattern-dashed",
+      "type": "registry:example",
+      "files": [
+        "registry/example/grid-pattern-dashed.tsx"
+      ]
+    },
+    {
+      "name": "hexagon-pattern-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/hexagon-pattern-demo.tsx"
+      ]
+    },
+    {
+      "name": "hexagon-pattern-linear-gradient",
+      "type": "registry:example",
+      "files": [
+        "registry/example/hexagon-pattern-linear-gradient.tsx"
+      ]
+    },
+    {
+      "name": "hexagon-pattern-dashed",
+      "type": "registry:example",
+      "files": [
+        "registry/example/hexagon-pattern-dashed.tsx"
+      ]
+    },
+    {
+      "name": "hexagon-pattern-spacing",
+      "type": "registry:example",
+      "files": [
+        "registry/example/hexagon-pattern-spacing.tsx"
+      ]
+    },
+    {
+      "name": "dot-pattern-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dot-pattern-demo.tsx"
+      ]
+    },
+    {
+      "name": "dot-pattern-linear-gradient",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dot-pattern-linear-gradient.tsx"
+      ]
+    },
+    {
+      "name": "dot-pattern-with-glow-effect",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dot-pattern-with-glow-effect.tsx"
+      ]
+    },
+    {
+      "name": "flickering-grid-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/flickering-grid-demo.tsx"
+      ]
+    },
+    {
+      "name": "flickering-grid-rounded-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/flickering-grid-rounded-demo.tsx"
+      ]
+    },
+    {
+      "name": "hero-video-dialog-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/hero-video-dialog-demo.tsx"
+      ]
+    },
+    {
+      "name": "hero-video-dialog-demo-top-in-bottom-out",
+      "type": "registry:example",
+      "files": [
+        "registry/example/hero-video-dialog-demo-top-in-bottom-out.tsx"
+      ]
+    },
+    {
+      "name": "code-comparison-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/code-comparison-demo.tsx"
+      ]
+    },
+    {
+      "name": "marquee-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/marquee-demo.tsx"
+      ]
+    },
+    {
+      "name": "marquee-demo-vertical",
+      "type": "registry:example",
+      "files": [
+        "registry/example/marquee-demo-vertical.tsx"
+      ]
+    },
+    {
+      "name": "marquee-logos",
+      "type": "registry:example",
+      "files": [
+        "registry/example/marquee-logos.tsx"
+      ]
+    },
+    {
+      "name": "marquee-3d",
+      "type": "registry:example",
+      "files": [
+        "registry/example/marquee-3d.tsx"
+      ]
+    },
+    {
+      "name": "globe-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/globe-demo.tsx"
+      ]
+    },
+    {
+      "name": "glyph-matrix-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/glyph-matrix-demo.tsx"
+      ]
+    },
+    {
+      "name": "glare-hover-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/glare-hover-demo.tsx"
+      ]
+    },
+    {
+      "name": "glare-hover-demo-cta",
+      "type": "registry:example",
+      "files": [
+        "registry/example/glare-hover-demo-cta.tsx"
+      ]
+    },
+    {
+      "name": "glare-hover-demo-alert",
+      "type": "registry:example",
+      "files": [
+        "registry/example/glare-hover-demo-alert.tsx"
+      ]
+    },
+    {
+      "name": "tweet-card-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/tweet-card-demo.tsx"
+      ]
+    },
+    {
+      "name": "tweet-card-images",
+      "type": "registry:example",
+      "files": [
+        "registry/example/tweet-card-images.tsx"
+      ]
+    },
+    {
+      "name": "tweet-card-meta-preview",
+      "type": "registry:example",
+      "files": [
+        "registry/example/tweet-card-meta-preview.tsx"
+      ]
+    },
+    {
+      "name": "shimmer-button-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/shimmer-button-demo.tsx"
+      ]
+    },
+    {
+      "name": "bento-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/bento-demo.tsx"
+      ]
+    },
+    {
+      "name": "bento-demo-vertical",
+      "type": "registry:example",
+      "files": [
+        "registry/example/bento-demo-vertical.tsx"
+      ]
+    },
+    {
+      "name": "number-ticker-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/number-ticker-demo.tsx"
+      ]
+    },
+    {
+      "name": "number-ticker-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/number-ticker-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "number-ticker-decimal-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/number-ticker-decimal-demo.tsx"
+      ]
+    },
+    {
+      "name": "ripple-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/ripple-demo.tsx"
+      ]
+    },
+    {
+      "name": "retro-grid-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/retro-grid-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-list-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-list-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-shiny-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-shiny-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "particles-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/particles-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-grid-pattern-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-grid-pattern-demo.tsx"
+      ]
+    },
+    {
+      "name": "interactive-grid-pattern-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/interactive-grid-pattern-demo.tsx"
+      ]
+    },
+    {
+      "name": "interactive-grid-pattern-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/interactive-grid-pattern-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "border-beam-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/border-beam-demo.tsx"
+      ]
+    },
+    {
+      "name": "border-beam-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/border-beam-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "border-beam-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/border-beam-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "border-beam-demo-4",
+      "type": "registry:example",
+      "files": [
+        "registry/example/border-beam-demo-4.tsx"
+      ]
+    },
+    {
+      "name": "animated-beam-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-beam-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-beam-unidirectional",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-beam-unidirectional.tsx"
+      ]
+    },
+    {
+      "name": "animated-beam-bidirectional",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-beam-bidirectional.tsx"
+      ]
+    },
+    {
+      "name": "animated-beam-multiple-inputs",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-beam-multiple-inputs.tsx"
+      ]
+    },
+    {
+      "name": "animated-beam-multiple-outputs",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-beam-multiple-outputs.tsx"
+      ]
+    },
+    {
+      "name": "text-reveal-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-reveal-demo.tsx"
+      ]
+    },
+    {
+      "name": "dia-text-reveal-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dia-text-reveal-demo.tsx"
+      ]
+    },
+    {
+      "name": "dia-text-reveal-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dia-text-reveal-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "dia-text-reveal-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dia-text-reveal-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "dia-text-reveal-demo-4",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dia-text-reveal-demo-4.tsx"
+      ]
+    },
+    {
+      "name": "animated-gradient-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-gradient-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-gradient-text-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-gradient-text-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "orbiting-circles-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/orbiting-circles-demo.tsx"
+      ]
+    },
+    {
+      "name": "dock-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dock-demo.tsx"
+      ]
+    },
+    {
+      "name": "dock-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dock-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "dock-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dock-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "word-rotate-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/word-rotate-demo.tsx"
+      ]
+    },
+    {
+      "name": "hyper-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/hyper-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "avatar-circles-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/avatar-circles-demo.tsx"
+      ]
+    },
+    {
+      "name": "typing-animation-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/typing-animation-demo.tsx"
+      ]
+    },
+    {
+      "name": "typing-animation-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/typing-animation-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "typing-animation-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/typing-animation-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "typing-animation-demo-4",
+      "type": "registry:example",
+      "files": [
+        "registry/example/typing-animation-demo-4.tsx"
+      ]
+    },
+    {
+      "name": "typing-animation-demo-5",
+      "type": "registry:example",
+      "files": [
+        "registry/example/typing-animation-demo-5.tsx"
+      ]
+    },
+    {
+      "name": "typing-animation-demo-6",
+      "type": "registry:example",
+      "files": [
+        "registry/example/typing-animation-demo-6.tsx"
+      ]
+    },
+    {
+      "name": "typing-animation-demo-7",
+      "type": "registry:example",
+      "files": [
+        "registry/example/typing-animation-demo-7.tsx"
+      ]
+    },
+    {
+      "name": "typing-animation-demo-8",
+      "type": "registry:example",
+      "files": [
+        "registry/example/typing-animation-demo-8.tsx"
+      ]
+    },
+    {
+      "name": "scroll-based-velocity-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/scroll-based-velocity-demo.tsx"
+      ]
+    },
+    {
+      "name": "scroll-based-velocity-images-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/scroll-based-velocity-images-demo.tsx"
+      ]
+    },
+    {
+      "name": "sparkles-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/sparkles-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "spinning-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/spinning-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "spinning-text-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/spinning-text-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "comic-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/comic-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "icon-cloud-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/icon-cloud-demo.tsx"
+      ]
+    },
+    {
+      "name": "icon-cloud-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/icon-cloud-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "icon-cloud-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/icon-cloud-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "text-animate-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-animate-demo.tsx"
+      ]
+    },
+    {
+      "name": "text-animate-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-animate-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "text-animate-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-animate-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "text-animate-demo-4",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-animate-demo-4.tsx"
+      ]
+    },
+    {
+      "name": "text-animate-demo-5",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-animate-demo-5.tsx"
+      ]
+    },
+    {
+      "name": "text-animate-demo-6",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-animate-demo-6.tsx"
+      ]
+    },
+    {
+      "name": "text-animate-demo-7",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-animate-demo-7.tsx"
+      ]
+    },
+    {
+      "name": "text-animate-demo-8",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-animate-demo-8.tsx"
+      ]
+    },
+    {
+      "name": "text-animate-demo-9",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-animate-demo-9.tsx"
+      ]
+    },
+    {
+      "name": "shiny-button-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/shiny-button-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-circular-progress-bar-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-circular-progress-bar-demo.tsx"
+      ]
+    },
+    {
+      "name": "shine-border-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/shine-border-demo.tsx"
+      ]
+    },
+    {
+      "name": "shine-border-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/shine-border-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "confetti-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/confetti-demo.tsx"
+      ]
+    },
+    {
+      "name": "confetti-basic-cannon",
+      "type": "registry:example",
+      "files": [
+        "registry/example/confetti-basic-cannon.tsx"
+      ]
+    },
+    {
+      "name": "confetti-random-direction",
+      "type": "registry:example",
+      "files": [
+        "registry/example/confetti-random-direction.tsx"
+      ]
+    },
+    {
+      "name": "confetti-fireworks",
+      "type": "registry:example",
+      "files": [
+        "registry/example/confetti-fireworks.tsx"
+      ]
+    },
+    {
+      "name": "confetti-stars",
+      "type": "registry:example",
+      "files": [
+        "registry/example/confetti-stars.tsx"
+      ]
+    },
+    {
+      "name": "confetti-side-cannons",
+      "type": "registry:example",
+      "files": [
+        "registry/example/confetti-side-cannons.tsx"
+      ]
+    },
+    {
+      "name": "confetti-custom-shapes",
+      "type": "registry:example",
+      "files": [
+        "registry/example/confetti-custom-shapes.tsx"
+      ]
+    },
+    {
+      "name": "confetti-emoji",
+      "type": "registry:example",
+      "files": [
+        "registry/example/confetti-emoji.tsx"
+      ]
+    },
+    {
+      "name": "cool-mode-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/cool-mode-demo.tsx"
+      ]
+    },
+    {
+      "name": "cool-mode-custom",
+      "type": "registry:example",
+      "files": [
+        "registry/example/cool-mode-custom.tsx"
+      ]
+    },
+    {
+      "name": "pulsating-button-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/pulsating-button-demo.tsx"
+      ]
+    },
+    {
+      "name": "pulsating-button-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/pulsating-button-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "ripple-button-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/ripple-button-demo.tsx"
+      ]
+    },
+    {
+      "name": "file-tree-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/file-tree-demo.tsx"
+      ]
+    },
+    {
+      "name": "blur-fade-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/blur-fade-demo.tsx"
+      ]
+    },
+    {
+      "name": "blur-fade-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/blur-fade-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "safari-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/safari-demo.tsx"
+      ]
+    },
+    {
+      "name": "safari-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/safari-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "safari-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/safari-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "safari-demo-4",
+      "type": "registry:example",
+      "files": [
+        "registry/example/safari-demo-4.tsx"
+      ]
+    },
+    {
+      "name": "iphone-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/iphone-demo.tsx"
+      ]
+    },
+    {
+      "name": "iphone-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/iphone-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "iphone-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/iphone-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "rainbow-button-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/rainbow-button-demo.tsx"
+      ]
+    },
+    {
+      "name": "rainbow-button-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/rainbow-button-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "interactive-hover-button-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/interactive-hover-button-demo.tsx"
+      ]
+    },
+    {
+      "name": "terminal-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/terminal-demo.tsx"
+      ]
+    },
+    {
+      "name": "terminal-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/terminal-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "video-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/video-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "pixel-image-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/pixel-image-demo.tsx"
+      ]
+    },
+    {
+      "name": "highlighter-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/highlighter-demo.tsx",
+        "registry/magicui/highlighter.tsx"
+      ]
+    },
+    {
+      "name": "animated-theme-toggler-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-theme-toggler-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-theme-toggler-square-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-theme-toggler-square-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-theme-toggler-diamond-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-theme-toggler-diamond-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-theme-toggler-rectangle-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-theme-toggler-rectangle-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-theme-toggler-hexagon-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-theme-toggler-hexagon-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-theme-toggler-triangle-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-theme-toggler-triangle-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-theme-toggler-star-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-theme-toggler-star-demo.tsx"
+      ]
+    },
+    {
+      "name": "animated-theme-toggler-next-themes-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/animated-theme-toggler-next-themes-demo.tsx"
+      ]
+    },
+    {
+      "name": "light-rays-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/light-rays-demo.tsx"
+      ]
+    },
+    {
+      "name": "dotted-map-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dotted-map-demo.tsx"
+      ]
+    },
+    {
+      "name": "dotted-map-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dotted-map-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "dotted-map-demo-3",
+      "type": "registry:example",
+      "files": [
+        "registry/example/dotted-map-demo-3.tsx"
+      ]
+    },
+    {
+      "name": "backlight-video-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/backlight-video-demo.tsx"
+      ]
+    },
+    {
+      "name": "backlight-image-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/backlight-image-demo.tsx"
+      ]
+    },
+    {
+      "name": "backlight-svg-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/backlight-svg-demo.tsx"
+      ]
+    },
+    {
+      "name": "kinetic-text-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/kinetic-text-demo.tsx"
+      ]
+    },
+    {
+      "name": "text-3d-flip-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-3d-flip-demo.tsx"
+      ]
+    },
+    {
+      "name": "text-3d-flip-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/text-3d-flip-demo-2.tsx"
+      ]
+    },
+    {
+      "name": "floating-3d-particles-demo",
+      "type": "registry:example",
+      "files": [
+        "registry/example/floating-3d-particles-demo.tsx"
+      ]
+    },
+    {
+      "name": "floating-3d-particles-demo-2",
+      "type": "registry:example",
+      "files": [
+        "registry/example/floating-3d-particles-demo-2.tsx"
+      ]
+    }
+  ]
+}

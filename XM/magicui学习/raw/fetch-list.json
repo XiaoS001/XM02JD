@@ -1,0 +1,267 @@
+[
+  {
+    "name": "text-animate",
+    "path": "registry/magicui/text-animate.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "aurora-text",
+    "path": "registry/magicui/aurora-text.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "animated-gradient-text",
+    "path": "registry/magicui/animated-gradient-text.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "sparkles-text",
+    "path": "registry/magicui/sparkles-text.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "typing-animation",
+    "path": "registry/magicui/typing-animation.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "word-rotate",
+    "path": "registry/magicui/word-rotate.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "number-ticker",
+    "path": "registry/magicui/number-ticker.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "kinetic-text",
+    "path": "registry/magicui/kinetic-text.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "text-3d-flip",
+    "path": "registry/magicui/text-3d-flip.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "morphing-text",
+    "path": "registry/magicui/morphing-text.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "line-shadow-text",
+    "path": "registry/magicui/line-shadow-text.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "hyper-text",
+    "path": "registry/magicui/hyper-text.tsx",
+    "category": "文字效果"
+  },
+  {
+    "name": "grid-pattern",
+    "path": "registry/magicui/grid-pattern.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "dot-pattern",
+    "path": "registry/magicui/dot-pattern.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "meteors",
+    "path": "registry/magicui/meteors.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "particles",
+    "path": "registry/magicui/particles.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "retro-grid",
+    "path": "registry/magicui/retro-grid.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "flickering-grid",
+    "path": "registry/magicui/flickering-grid.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "animated-grid-pattern",
+    "path": "registry/magicui/animated-grid-pattern.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "hexagon-pattern",
+    "path": "registry/magicui/hexagon-pattern.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "striped-pattern",
+    "path": "registry/magicui/striped-pattern.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "interactive-grid-pattern",
+    "path": "registry/magicui/interactive-grid-pattern.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "light-rays",
+    "path": "registry/magicui/light-rays.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "warp-background",
+    "path": "registry/magicui/warp-background.tsx",
+    "category": "背景图案"
+  },
+  {
+    "name": "magic-card",
+    "path": "registry/magicui/magic-card.tsx",
+    "category": "交互效果"
+  },
+  {
+    "name": "glare-hover",
+    "path": "registry/magicui/glare-hover.tsx",
+    "category": "交互效果"
+  },
+  {
+    "name": "shine-border",
+    "path": "registry/magicui/shine-border.tsx",
+    "category": "交互效果"
+  },
+  {
+    "name": "border-beam",
+    "path": "registry/magicui/border-beam.tsx",
+    "category": "交互效果"
+  },
+  {
+    "name": "dock",
+    "path": "registry/magicui/dock.tsx",
+    "category": "交互效果"
+  },
+  {
+    "name": "smooth-cursor",
+    "path": "registry/magicui/smooth-cursor.tsx",
+    "category": "交互效果"
+  },
+  {
+    "name": "pointer",
+    "path": "registry/magicui/pointer.tsx",
+    "category": "交互效果"
+  },
+  {
+    "name": "lens",
+    "path": "registry/magicui/lens.tsx",
+    "category": "交互效果"
+  },
+  {
+    "name": "pixel-image",
+    "path": "registry/magicui/pixel-image.tsx",
+    "category": "交互效果"
+  },
+  {
+    "name": "shimmer-button",
+    "path": "registry/magicui/shimmer-button.tsx",
+    "category": "按钮类"
+  },
+  {
+    "name": "shiny-button",
+    "path": "registry/magicui/shiny-button.tsx",
+    "category": "按钮类"
+  },
+  {
+    "name": "rainbow-button",
+    "path": "registry/magicui/rainbow-button.tsx",
+    "category": "按钮类"
+  },
+  {
+    "name": "pulsating-button",
+    "path": "registry/magicui/pulsating-button.tsx",
+    "category": "按钮类"
+  },
+  {
+    "name": "ripple-button",
+    "path": "registry/magicui/ripple-button.tsx",
+    "category": "按钮类"
+  },
+  {
+    "name": "interactive-hover-button",
+    "path": "registry/magicui/interactive-hover-button.tsx",
+    "category": "按钮类"
+  },
+  {
+    "name": "scroll-progress",
+    "path": "registry/magicui/scroll-progress.tsx",
+    "category": "滚动相关"
+  },
+  {
+    "name": "scroll-based-velocity",
+    "path": "registry/magicui/scroll-based-velocity.tsx",
+    "category": "滚动相关"
+  },
+  {
+    "name": "blur-fade",
+    "path": "registry/magicui/blur-fade.tsx",
+    "category": "滚动相关"
+  },
+  {
+    "name": "text-reveal",
+    "path": "registry/magicui/text-reveal.tsx",
+    "category": "滚动相关"
+  },
+  {
+    "name": "animated-list",
+    "path": "registry/magicui/animated-list.tsx",
+    "category": "滚动相关"
+  },
+  {
+    "name": "marquee",
+    "path": "registry/magicui/marquee.tsx",
+    "category": "滚动相关"
+  },
+  {
+    "name": "animated-beam",
+    "path": "registry/magicui/animated-beam.tsx",
+    "category": "复杂可视化"
+  },
+  {
+    "name": "orbiting-circles",
+    "path": "registry/magicui/orbiting-circles.tsx",
+    "category": "复杂可视化"
+  },
+  {
+    "name": "globe",
+    "path": "registry/magicui/globe.tsx",
+    "category": "复杂可视化"
+  },
+  {
+    "name": "icon-cloud",
+    "path": "registry/magicui/icon-cloud.tsx",
+    "category": "复杂可视化"
+  },
+  {
+    "name": "animated-circular-progress-bar",
+    "path": "registry/magicui/animated-circular-progress-bar.tsx",
+    "category": "复杂可视化"
+  },
+  {
+    "name": "confetti",
+    "path": "registry/magicui/confetti.tsx",
+    "category": "复杂可视化"
+  },
+  {
+    "name": "terminal",
+    "path": "registry/magicui/terminal.tsx",
+    "category": "复杂可视化"
+  },
+  {
+    "name": "file-tree",
+    "path": "registry/magicui/file-tree.tsx",
+    "category": "复杂可视化"
+  }
+]

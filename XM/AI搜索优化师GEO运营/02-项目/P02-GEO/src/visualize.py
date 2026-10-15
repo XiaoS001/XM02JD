@@ -1,101 +1,74 @@
 # -*- coding: utf-8 -*-
-"""P02 可视化看板：GEO 数据工作台（自包含 HTML，零依赖）"""
-import json, os
-from collections import Counter
+"""P02 看板 —— 视觉对标面试帝，代码组织学 Magic UI"""
+import os, sys, json
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "_共享模板"))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from theme import page, hero, section, kpi, dark_kpi, hbar, card, table, note, dark_block
 from config import KW_FILE, CONTENT_FILE, CITATION_FILE, FUNNEL_FILE
 
 def load(p):
     with open(p, "r", encoding="utf-8") as f: return json.load(f)
 
-def hbar(items, color):
-    total = max((v for _, v in items), default=1)
-    rows = []
-    for name, cnt in items:
-        pct = cnt / total * 100
-        rows.append(f"<div class='bar-row'><span class='bar-label'>{name}</span>"
-                    f"<div class='bar-track'><div class='bar-fill' style='width:{pct:.0f}%;background:{color}'></div></div>"
-                    f"<span class='bar-val'>{cnt}</span></div>")
-    return "".join(rows)
-
-def render():
-    kws = load(KW_FILE)
-    content = load(CONTENT_FILE)
-    cit = load(CITATION_FILE)
-    fun = load(FUNNEL_FILE)
-
+def build():
+    kws = load(KW_FILE); content = load(CONTENT_FILE)
+    cit = load(CITATION_FILE); fun = load(FUNNEL_FILE)
+    from collections import Counter
     n_kw = len(kws)
     cat_dist = Counter(k["category"] for k in kws)
     top_kws = sorted(kws, key=lambda x: -x["priority"])[:10]
     plat = cit["summary"]
+    f = fun["funnel"]
 
-    plat_rows = "".join(
-        f"<tr><td>{p}</td><td>{v['current']}</td><td class='{ 'up' if v['change_pct']>0 else 'down'}'>{v['change_pct']:+}%</td><td>{v['index_rate']}%</td></tr>"
-        for p, v in plat.items())
-    kw_rows = "".join(
-        f"<tr><td>{k['keyword']}</td><td>{k['category']}</td><td>{k['competition']}</td><td>{k['est_volume']}</td><td>{k['priority']}</td></tr>"
-        for k in top_kws)
-    fun_rows = "".join(
-        f"<div class='frow'><span>{s}</span><b>{v}</b><span class='rate'>{fun['rates'][s]*100:.1f}%</span></div>"
-        for s, v in fun["funnel"].items())
+    hero_html = hero(
+        'GEO 数据工作台<br><em>日语学习品牌</em>',
+        "关键词矩阵 → 埋词检查 → 五大 AI 平台引用监测 → 询盘漏斗。每个数字可复现，口径经得起追问。",
+        tagline="P02 · 练手项目"
+    )
 
-    html = f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
-<title>P02 GEO 数据工作台</title><style>
-*{{margin:0;padding:0;box-sizing:border-box}}
-body{{font-family:'Segoe UI','Microsoft YaHei';background:#0d1117;color:#e6edf3;padding:26px}}
-.wrap{{max-width:1060px;margin:0 auto}}
-h1{{font-size:25px}} .sub{{color:#8b949e;font-size:13px;margin-bottom:22px}}
-.kpis{{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:24px}}
-.kpi{{background:#161b22;border-radius:10px;padding:16px 10px;text-align:center;border-top:3px solid #58a6ff}}
-.kpi-v{{font-size:22px;font-weight:700}} .kpi-l{{font-size:12px;color:#8b949e;margin-top:5px}}
-.grid{{display:grid;grid-template-columns:1fr 1fr;gap:16px}}
-.card{{background:#161b22;border-radius:10px;padding:18px}}
-.card h2{{font-size:15px;color:#c9d1d9;margin-bottom:12px}}
-.full{{grid-column:1/-1}}
-.bar-row{{display:flex;align-items:center;margin-bottom:9px}}
-.bar-label{{width:110px;font-size:13px;color:#b6bdd2}}
-.bar-track{{flex:1;height:16px;background:#21262d;border-radius:8px;overflow:hidden}}
-.bar-fill{{height:100%;border-radius:8px}} .bar-val{{width:60px;text-align:right;font-size:12px;color:#8b949e}}
-table{{width:100%;border-collapse:collapse;font-size:13px}}
-th{{color:#8b949e;text-align:left;padding:6px 8px;border-bottom:1px solid #30363d}}
-td{{padding:6px 8px;border-bottom:1px solid #21262d}}
-.up{{color:#3fb950}} .down{{color:#f85149}}
-.frow{{display:flex;justify-content:space-between;padding:8px 10px;border-bottom:1px solid #21262d;font-size:14px}}
-.frow .rate{{color:#58a6ff}}
-.note{{background:#161b22;border-left:4px solid #f5a623;border-radius:10px;padding:16px;margin-top:18px;font-size:13px;color:#c9d1d9;line-height:1.7}}
-.foot{{text-align:center;color:#5d6480;font-size:11px;margin-top:18px}}
-</style></head><body><div class="wrap">
-<h1>📊 P02 · GEO 数据工作台（日语学习品牌）</h1>
-<div class="sub">关键词矩阵 → 埋词检查 → AI 引用监测 → 询盘漏斗 · 模拟数据 · 固定种子可复现</div>
+    body = section("GEO 数据总览", "围绕日语学习品牌的关键词与引用数据",
+        f'<div class="kpis">'
+        + kpi(n_kw, "关键词总量", 0, True)
+        + kpi(content["coverage_pct"], "埋词覆盖率 %", .06)
+        + kpi(cit["total_current"], "AI 引用次数", .12, True)
+        + kpi(f["询盘"], "月询盘", .18, True)
+        + kpi(f["成单"], "成交", .24, True) + '</div>')
 
-<div class="kpis">
-  <div class="kpi"><div class="kpi-v">{n_kw}</div><div class="kpi-l">关键词总量</div></div>
-  <div class="kpi"><div class="kpi-v">{content['coverage_pct']}%</div><div class="kpi-l">埋词覆盖率</div></div>
-  <div class="kpi"><div class="kpi-v">{content['density_pct']}%</div><div class="kpi-l">埋词密度</div></div>
-  <div class="kpi"><div class="kpi-v">{cit['total_current']}</div><div class="kpi-l">AI 引用次数</div></div>
-  <div class="kpi"><div class="kpi-v">{cit['total_change_pct']:+}%</div><div class="kpi-l">引用环比</div></div>
-  <div class="kpi"><div class="kpi-v">{fun['funnel']['询盘']}</div><div class="kpi-l">月询盘数</div></div>
-</div>
+    plat_rows = [[p, f"{v['current']}",
+                  f'<span class="{"up" if v["change_pct"]>0 else "down"}">{v["change_pct"]:+}%</span>',
+                  f"{v['index_rate']}%"] for p, v in plat.items()]
+    body += section("五大 AI 平台引用监测", "豆包 / 元宝 / DeepSeek / 千问 / 文心一言",
+        table(["平台", "引用次数", "环比", "收录率"], plat_rows))
 
-<div class="grid">
-  <div class="card"><h2>四类关键词分布</h2>{hbar(cat_dist.most_common(), '#58a6ff')}</div>
-  <div class="card"><h2>询盘漏斗</h2>{fun_rows}</div>
-  <div class="card full"><h2>五大 AI 平台引用监测</h2>
-    <table><tr><th>平台</th><th>引用次数</th><th>环比</th><th>收录率</th></tr>{plat_rows}</table></div>
-  <div class="card full"><h2>高优先级关键词 Top10</h2>
-    <table><tr><th>关键词</th><th>类别</th><th>竞争度</th><th>预估月搜</th><th>优先级</th></tr>{kw_rows}</table></div>
-</div>
+    body += dark_block("引用规模", f"五大平台合计 · 环比 {cit['total_change_pct']:+}%",
+        dark_kpi(cit["total_current"], "总引用次数") + dark_kpi(n_kw, "关键词矩阵")
+        + dark_kpi(f["曝光"], "月曝光") + dark_kpi(f["成单"], "成交"))
 
-<div class="note"><b>面试弹药（可量化成果）：</b>
-① 关键词矩阵 {n_kw} 个（四类分布见上）；② 埋词覆盖率 {content['coverage_pct']}%，密度 {content['density_pct']}%；
-③ 五大 AI 平台总引用 {cit['total_current']} 次；④ 环比 {cit['total_change_pct']:+}%；
-⑤ 月询盘 {fun['funnel']['询盘']}，成单 {fun['funnel']['成单']}；
-⑥ DeepSeek 引用 {plat['DeepSeek']['current']} 次居首，豆包环比 {plat['豆包']['change_pct']:+}% 增长最快。</div>
+    body += section("关键词与询盘漏斗", "四类词分布 + 逐级转化率",
+        f'''<div class="grid grid-2">
+  <div class="card reveal"><h3>四类关键词分布</h3>{hbar(cat_dist.most_common(), "var(--red)")}</div>
+  <div class="card reveal" style="--d:.08s"><h3>询盘漏斗</h3>
+    {"".join(f'<div class="funnel-row"><span>{s}</span><b>{v}</b><span class="funnel-rate">{fun["rates"][s]*100:.1f}%</span></div>' for s, v in f.items())}
+  </div>
+</div>''')
 
-<div class="foot">XiaoY 生成 · 零外部依赖 · 数据可复现（种子 20261014）</div>
-</div></body></html>"""
+    kw_rows = [[k["keyword"], k["category"], k["competition"], k["est_volume"], k["priority"]] for k in top_kws]
+    body += section("高优先级关键词 Top10", "排序依据：意图价值 × (10 − 竞争度)",
+        table(["关键词", "类别", "竞争度", "预估月搜", "优先级"], kw_rows))
 
+    body += section("面试弹药 · 6 个可报数字", "对应 JD 任职要求第 3 条「可量化实战成果」",
+        note(f'''① 关键词矩阵 <b>{n_kw}</b> 个（四类分布）<br>
+② 埋词覆盖率 <b>{content["coverage_pct"]}%</b>，密度 {content["density_pct"]}%<br>
+③ 五大 AI 平台总引用 <b>{cit["total_current"]}</b> 次<br>
+④ 引用环比 <b>{cit["total_change_pct"]:+}%</b>（豆包增速最快）<br>
+⑤ 月询盘 <b>{f["询盘"]}</b>，成单 <b>{f["成单"]}</b><br>
+⑥ DeepSeek 引用 <b>{plat["DeepSeek"]["current"]}</b> 次居首'''), tight=True)
+
+    return page("P02 · GEO 数据工作台", hero_html, body,
+        "P02 GEO数据工作台 · XiaoY · 数据可复现（种子 20261014）· 视觉对标面试帝 / 组织学 Magic UI")
+
+def render():
     out = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "dashboard.html"))
-    with open(out, "w", encoding="utf-8") as f: f.write(html)
+    with open(out, "w", encoding="utf-8") as fh: fh.write(build())
     return out
 
 if __name__ == "__main__":

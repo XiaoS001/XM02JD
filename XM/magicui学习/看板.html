@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic UI 深度学习 · 可视化看板</title>
+<style>
+:root{
+  --bg:#0a0a0f; --surface:#12121a; --border:#26263a; --ink:#e8e8f0; --muted:#8b8ba7;
+  --purple:#8b5cf6; --pink:#ec4899; --orange:#f97316; --cyan:#06b6d4; --green:#10b981;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Segoe UI','Microsoft YaHei',sans-serif;line-height:1.65}
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform:scaleX(0);transform-origin:0 50%;
+  background:linear-gradient(90deg,var(--purple),var(--pink),var(--orange));z-index:100}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s,transform .65s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.reveal.is-visible{opacity:1;transform:none}
+.hero{padding:88px 0 56px;text-align:center;position:relative;overflow:hidden}
+.hero:before{content:'';position:absolute;top:-120px;left:50%;transform:translateX(-50%);
+  width:700px;height:400px;background:radial-gradient(circle,rgba(139,92,246,.28),transparent 70%);pointer-events:none}
+.badge{display:inline-block;border:1px solid var(--border);background:var(--surface);border-radius:999px;
+  padding:6px 16px;font-size:12.5px;color:var(--muted);margin-bottom:18px}
+h1{font-size:clamp(32px,5.5vw,54px);font-weight:800;letter-spacing:-1.5px;line-height:1.12;margin-bottom:14px}
+.grad{background:linear-gradient(90deg,var(--purple),var(--pink),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:14.5px;max-width:600px;margin:0 auto}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;padding:44px 0}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 14px;text-align:center;position:relative;overflow:hidden}
+.kpi:before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(139,92,246,.09),transparent);pointer-events:none}
+.kpi-v{font-size:32px;font-weight:800;background:linear-gradient(90deg,var(--purple),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kpi-l{font-size:12px;color:var(--muted);margin-top:5px}
+section{padding:52px 0}
+h2{font-size:clamp(22px,3.2vw,30px);font-weight:700;letter-spacing:-.5px;margin-bottom:8px}
+.sub{color:var(--muted);font-size:13.5px;margin-bottom:28px}
+.tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;position:relative;
+  transition:transform .3s cubic-bezier(.2,.7,.2,1),border-color .3s}
+.card:hover{transform:translateY(-4px);border-color:var(--purple)}
+.card h3{font-size:15.5px;margin-bottom:6px}
+.card p{font-size:13px;color:var(--muted)}
+.card .tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:6px;margin-bottom:8px;font-weight:600}
+.t-motion{background:rgba(139,92,246,.16);color:#a78bfa}
+.t-css{background:rgba(6,182,212,.16);color:#22d3ee}
+.t-svg{background:rgba(16,185,129,.16);color:#34d399}
+.t-canvas{background:rgba(249,115,22,.16);color:#fb923c}
+pre{background:#0d0d16;border:1px solid var(--border);border-radius:10px;padding:16px;overflow-x:auto;font-size:12.5px;line-height:1.6}
+code{font-family:'Cascadia Code','Consolas',monospace}
+.cmt{color:#6b7280} .key{color:#c084fc} .str{color:#86efac} .fn{color:#60a5fa}
+table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border-radius:10px;overflow:hidden}
+th{text-align:left;padding:11px 14px;background:#17172a;color:#c4c4dc;font-weight:600;border-bottom:1px solid var(--border)}
+td{padding:10px 14px;border-bottom:1px solid #1c1c2c;color:#d4d4e4}
+tr:last-child td{border-bottom:none}
+.hl{color:var(--pink);font-weight:600}
+.recipe{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:22px}
+.recipe li{font-size:13.5px;margin-bottom:10px;color:#d4d4e4}
+.recipe code{background:#1d1d30;color:#a78bfa;padding:2px 7px;border-radius:5px;font-size:12px}
+footer{padding:44px 0;text-align:center;color:#5c5c78;font-size:12px;border-top:1px solid var(--border);margin-top:36px}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+<div class="progress" data-progress></div>
+<header class="hero">
+<div class="wrap">
+<div class="badge">★ 22,672 · MIT · 最近更新 4 天前</div>
+<h1 class="reveal">Magic UI<br><span class="grad">深度学习报告</span></h1>
+<p class="reveal" style="--d:.12s">79 个组件源码全量分析 · 12,521 行代码 · 从 registry 架构到 offset-path 运动路径</p>
+</div>
+</header>
+<div class="wrap"><div class="kpis">
+<div class="kpi reveal"><div class="kpi-v">79</div><div class="kpi-l">组件源码（全量）</div></div>
+<div class="kpi reveal" style="--d:.06s"><div class="kpi-v">12,521</div><div class="kpi-l">代码行数</div></div>
+<div class="kpi reveal" style="--d:.12s"><div class="kpi-v">250</div><div class="kpi-l">registry 条目</div></div>
+<div class="kpi reveal" style="--d:.18s"><div class="kpi-v">33</div><div class="kpi-l">motion 驱动组件</div></div>
+<div class="kpi reveal" style="--d:.24s"><div class="kpi-v">5/5</div><div class="kpi-l">测试通过</div></div>
+</div></div>
+<section class="wrap">
+<h2 class="reveal">技术路线分布</h2>
+<p class="sub reveal" style="--d:.08s">79 个组件按实现方式分为四类 —— motion 是绝对主力，但纯 CSS 仍占 30%</p>
+<div class="tech-grid">
+<div class="card reveal"><span class="tag t-motion">42%</span><h3>motion 驱动 · 33 个</h3><p>text-animate, magic-card, number-ticker, border-beam…</p></div>
+<div class="card reveal" style="--d:.08s"><span class="tag t-css">30%</span><h3>纯 CSS/Tailwind · 24 个</h3><p>marquee, shine-border, aurora-text, rainbow-button…</p></div>
+<div class="card reveal" style="--d:.16s"><span class="tag t-svg">19%</span><h3>SVG 矢量 · 15 个</h3><p>grid-pattern, orbiting-circles, backlight, dotted-map…</p></div>
+<div class="card reveal" style="--d:.24s"><span class="tag t-canvas">9%</span><h3>Canvas 绘制 · 7 个</h3><p>retro-grid, particles, globe, glyph-matrix…</p></div>
+</div>
+</section>
+<section class="wrap">
+<h2 class="reveal">★ 最有价值的发现：<span class="grad">offset-path</span></h2>
+<p class="sub reveal" style="--d:.08s">border-beam 组件让光点沿边框绕行 —— 不用 JS 算坐标，纯 CSS 运动路径</p>
+<pre class="reveal" style="--d:.12s"><code>
+<span class="cmt">// 定义一条圆角矩形路径，让光点沿它运动</span>
+<span class="key">offsetPath</span>: <span class="str">`rect(0 auto auto 0 round ${size}px)`</span>,
+
+<span class="cmt">// 从 0% 走到 100%，就是沿路径绕一圈</span>
+<span class="key">initial</span>: {{ <span class="key">offsetDistance</span>: <span class="str">"0%"</span> }},
+<span class="key">animate</span>: {{ <span class="key">offsetDistance</span>: <span class="str">"100%"</span> }},
+<span class="key">transition</span>: {{ <span class="key">repeat</span>: Infinity, <span class="key">ease</span>: <span class="str">"linear"</span> }}
+</code></pre>
+</section>
+<section class="wrap">
+<h2 class="reveal">motion API 惯用法速查</h2>
+<p class="sub reveal" style="--d:.08s">从 30 个组件的实际用法中提炼</p>
+<table class="reveal" style="--d:.12s">
+<tr><th>需求</th><th>API 组合</th><th>使用次数</th></tr>
+<tr><td>滚动进度条</td><td><code style="color:#a78bfa">useScroll()</code> → scrollYProgress → 绑 scaleX</td><td>7</td></tr>
+<tr><td>数字滚动</td><td><code style="color:#a78bfa">useMotionValue</code> + <code style="color:#a78bfa">useSpring</code> + <code style="color:#a78bfa">useInView</code></td><td>18</td></tr>
+<tr><td>鼠标跟随光晕</td><td><code style="color:#a78bfa">useMotionValue</code> + <code style="color:#a78bfa">useMotionTemplate</code></td><td>18</td></tr>
+<tr><td>进入视口触发</td><td><code style="color:#a78bfa">useInView(ref, {{once:true}})</code></td><td>15</td></tr>
+<tr><td>值变换</td><td><code style="color:#a78bfa">useTransform</code></td><td>11</td></tr>
+<tr><td>滚动速度感应</td><td><code style="color:#a78bfa">useVelocity</code> + useTransform 限幅</td><td>3</td></tr>
+</table>
+</section>
+<section class="wrap">
+<h2 class="reveal">与上个项目<span class="grad">对比</span></h2>
+<p class="sub reveal" style="--d:.08s">两种技术路线的正面碰撞 —— 没有最好，只有最合适</p>
+<table class="reveal" style="--d:.12s">
+<tr><th>维度</th><th>面试帝（产品站）</th><th>Magic UI（组件库）</th></tr>
+<tr><td>动画方案</td><td class="hl">纯 CSS（25 keyframes）</td><td class="hl">motion 库（33 组件）</td></tr>
+<tr><td>JS 体积</td><td>3.38 KB（极小）</td><td>按需引入</td></tr>
+<tr><td>依赖</td><td>零依赖</td><td>30 组件依赖 motion</td></tr>
+<tr><td>配色</td><td>暖色系（米白+砖红+金）</td><td>紫色渐变系</td></tr>
+<tr><td>定位</td><td>转化导向</td><td>工具导向</td></tr>
+<tr><td>适用场景</td><td>少量固定效果 + 性能敏感</td><td>大量可复用组件 + 开发效率</td></tr>
+</table>
+</section>
+<section class="wrap">
+<h2 class="reveal">可复用配方</h2>
+<p class="sub reveal" style="--d:.08s">可直接抄进项目的技巧</p>
+<div class="recipe reveal" style="--d:.12s">
+<ol style="padding-left:20px">
+<li><b>边框发光绕行</b>：<code>offset-path: rect(0 auto auto 0 round Npx)</code> + 动画 offsetDistance 0%→100%</li>
+<li><b>边框高光扫过</b>：<code>radial-gradient</code> + <code>mask</code> 双层 + <code>maskComposite: exclude</code></li>
+<li><b>渐变文字流动</b>：<code>background-size: 300%</code> + <code>bg-clip-text</code> + <code>text-transparent</code></li>
+<li><b>模糊背景光</b>：SVG <code>feGaussianBlur</code> + <code>feColorMatrix saturate</code></li>
+<li><b>性能关键</b>：高频值用 <code>useMotionValue</code>（不触发 React 重渲染）</li>
+<li><b>无障碍</b>：Tailwind 用 <code>motion-safe:</code> 前缀自动降级</li>
+<li><b>Canvas 三件套</b>：<code>requestAnimationFrame</code> + <code>devicePixelRatio</code> + 清理函数</li>
+<li><b>无缝循环</b>：<code>wrap(min,max,v)</code> 取模函数</li>
+</ol>
+</div>
+</section>
+<section class="wrap">
+<h2 class="reveal">诚实标注</h2>
+<p class="sub reveal" style="--d:.08s">发现的不足与未完成项</p>
+<div class="card reveal" style="--d:.12s;border-left:3px solid #f59e0b">
+<h3 style="color:#fbbf24">发现的不足</h3>
+<p style="margin-top:8px">① 动画降级仅 <b>2/79</b> 组件用 motion-safe（覆盖率低）<br>
+② 无障碍处理 <b>29/79</b>（37%）<br>
+③ registry 声明 78 个但源码 79 个</p>
+</div>
+<div class="card reveal" style="--d:.18s;margin-top:14px;border-left:3px solid #6b7280">
+<h3 style="color:#9ca3af">未完成项</h3>
+<p style="margin-top:8px">① 未实际运行 React 组件（需 npm install + dev server）<br>
+② 170 个 example 示例未逐个分析<br>
+③ 未对比其他组件库（Aceternity UI 等）</p>
+</div>
+</section>
+<footer>
+<p>Magic UI 深度学习报告 · XiaoY · 2026-10-15</p>
+<p style="margin-top:6px">79 个组件源码全量分析 · 完整日志见 MagicUI学习日志-20261015.md</p>
+</footer>
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}})},{threshold:0.16});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  var pb=document.querySelector('[data-progress]');
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var onScroll=function(){
+    var el=document.documentElement;var total=el.scrollHeight-el.clientHeight;
+    if(pb)pb.style.transform='scaleX('+(total>0?window.scrollY/total:0)+')';
+  };
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+})();
+</script>
+</body></html>

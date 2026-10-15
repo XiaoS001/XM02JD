@@ -1,0 +1,1243 @@
+[
+  {
+    "name": "retro-grid",
+    "lines": 867,
+    "bytes": 23431,
+    "usesMotion": false,
+    "usesCanvas": true,
+    "usesSVG": false,
+    "usesCSSAnim": true,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "react"
+    ]
+  },
+  {
+    "name": "file-tree",
+    "lines": 502,
+    "bytes": 12565,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "@radix-ui/react-accordion",
+      "lucide-react"
+    ]
+  },
+  {
+    "name": "text-animate",
+    "lines": 446,
+    "bytes": 9476,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "icon-cloud",
+    "lines": 378,
+    "bytes": 11046,
+    "usesMotion": false,
+    "usesCanvas": true,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "lucide-react",
+      "react-dom/server"
+    ]
+  },
+  {
+    "name": "floating-3d-particles",
+    "lines": 346,
+    "bytes": 9785,
+    "usesMotion": false,
+    "usesCanvas": true,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "animated-theme-toggler",
+    "lines": 331,
+    "bytes": 10206,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "lucide-react",
+      "react-dom"
+    ]
+  },
+  {
+    "name": "particles",
+    "lines": 322,
+    "bytes": 8543,
+    "usesMotion": false,
+    "usesCanvas": true,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "tweet-card",
+    "lines": 308,
+    "bytes": 9430,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "react-tweet",
+      "react-tweet/api"
+    ]
+  },
+  {
+    "name": "hexagon-pattern",
+    "lines": 303,
+    "bytes": 8397,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "terminal",
+    "lines": 301,
+    "bytes": 7716,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "cool-mode",
+    "lines": 299,
+    "bytes": 7851,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "text-3d-flip",
+    "lines": 270,
+    "bytes": 7071,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "dia-text-reveal",
+    "lines": 264,
+    "bytes": 6909,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "smooth-cursor",
+    "lines": 260,
+    "bytes": 6759,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "safari",
+    "lines": 239,
+    "bytes": 13124,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "typing-animation",
+    "lines": 237,
+    "bytes": 5669,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "magic-card",
+    "lines": 223,
+    "bytes": 6314,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "motion/react",
+      "next-themes"
+    ]
+  },
+  {
+    "name": "scroll-based-velocity",
+    "lines": 221,
+    "bytes": 6198,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "motion/react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "flickering-grid",
+    "lines": 199,
+    "bytes": 5463,
+    "usesMotion": false,
+    "usesCanvas": true,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "animated-beam",
+    "lines": 190,
+    "bytes": 4986,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "dotted-map",
+    "lines": 189,
+    "bytes": 4972,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "svg-dotted-map"
+    ]
+  },
+  {
+    "name": "hyper-text",
+    "lines": 186,
+    "bytes": 4715,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "animated-grid-pattern",
+    "lines": 178,
+    "bytes": 4410,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "iphone",
+    "lines": 178,
+    "bytes": 5882,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "glyph-matrix",
+    "lines": 162,
+    "bytes": 4524,
+    "usesMotion": false,
+    "usesCanvas": true,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "dot-pattern",
+    "lines": 159,
+    "bytes": 4251,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "code-comparison",
+    "lines": 157,
+    "bytes": 6248,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "@shikijs/transformers",
+      "lucide-react",
+      "next-themes"
+    ]
+  },
+  {
+    "name": "dock",
+    "lines": 156,
+    "bytes": 3972,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "class-variance-authority",
+      "motion/react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "sparkles-text",
+    "lines": 156,
+    "bytes": 4108,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "glare-hover",
+    "lines": 154,
+    "bytes": 4172,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "react"
+    ]
+  },
+  {
+    "name": "warp-background",
+    "lines": 153,
+    "bytes": 5869,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "hero-video-dialog",
+    "lines": 151,
+    "bytes": 4967,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "lucide-react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "light-rays",
+    "lines": 150,
+    "bytes": 3682,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "morphing-text",
+    "lines": 150,
+    "bytes": 3628,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "confetti",
+    "lines": 149,
+    "bytes": 3576,
+    "usesMotion": false,
+    "usesCanvas": true,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "react",
+      "canvas-confetti",
+      "canvas-confetti"
+    ]
+  },
+  {
+    "name": "neon-gradient-card",
+    "lines": 149,
+    "bytes": 4220,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "video-text",
+    "lines": 140,
+    "bytes": 3503,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "lens",
+    "lines": 133,
+    "bytes": 3555,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "globe",
+    "lines": 129,
+    "bytes": 3506,
+    "usesMotion": true,
+    "usesCanvas": true,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "cobe",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "pulsating-button",
+    "lines": 128,
+    "bytes": 3132,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "pixel-image",
+    "lines": 127,
+    "bytes": 3314,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "pointer",
+    "lines": 120,
+    "bytes": 3215,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "progressive-blur",
+    "lines": 114,
+    "bytes": 4423,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "spinning-text",
+    "lines": 113,
+    "bytes": 2651,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "bento-grid",
+    "lines": 110,
+    "bytes": 3206,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "@radix-ui/react-icons"
+    ]
+  },
+  {
+    "name": "animated-circular-progress-bar",
+    "lines": 109,
+    "bytes": 3524,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": []
+  },
+  {
+    "name": "animated-subscribe-button",
+    "lines": 109,
+    "bytes": 3331,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "border-beam",
+    "lines": 108,
+    "bytes": 2462,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "motion/react"
+    ]
+  },
+  {
+    "name": "android",
+    "lines": 103,
+    "bytes": 2860,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "highlighter",
+    "lines": 103,
+    "bytes": 2214,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "react",
+      "motion/react",
+      "rough-notation",
+      "rough-notation/lib/model"
+    ]
+  },
+  {
+    "name": "ripple-button",
+    "lines": 102,
+    "bytes": 2863,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "shimmer-button",
+    "lines": 97,
+    "bytes": 2846,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "blur-fade",
+    "lines": 95,
+    "bytes": 2220,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "animated-list",
+    "lines": 80,
+    "bytes": 2036,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "text-reveal",
+    "lines": 76,
+    "bytes": 1965,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "marquee",
+    "lines": 75,
+    "bytes": 1658,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "number-ticker",
+    "lines": 75,
+    "bytes": 1799,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "shiny-button",
+    "lines": 75,
+    "bytes": 2285,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "interactive-grid-pattern",
+    "lines": 74,
+    "bytes": 2184,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "noise-texture",
+    "lines": 74,
+    "bytes": 1785,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "orbiting-circles",
+    "lines": 72,
+    "bytes": 1735,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "grid-pattern",
+    "lines": 71,
+    "bytes": 1537,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "line-shadow-text",
+    "lines": 66,
+    "bytes": 1569,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "shine-border",
+    "lines": 64,
+    "bytes": 1649,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "comic-text",
+    "lines": 62,
+    "bytes": 1593,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "meteors",
+    "lines": 62,
+    "bytes": 1610,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "rainbow-button",
+    "lines": 62,
+    "bytes": 3404,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": true,
+    "deps": [
+      "react",
+      "@radix-ui/react-slot",
+      "class-variance-authority"
+    ]
+  },
+  {
+    "name": "ripple",
+    "lines": 59,
+    "bytes": 1564,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "striped-pattern",
+    "lines": 51,
+    "bytes": 1400,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "word-rotate",
+    "lines": 51,
+    "bytes": 1140,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react",
+      "motion/react"
+    ]
+  },
+  {
+    "name": "avatar-circles",
+    "lines": 50,
+    "bytes": 1214,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": []
+  },
+  {
+    "name": "aurora-text",
+    "lines": 44,
+    "bytes": 1008,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "kinetic-text",
+    "lines": 44,
+    "bytes": 1552,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "animated-shiny-text",
+    "lines": 43,
+    "bytes": 999,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "animated-gradient-text",
+    "lines": 38,
+    "bytes": 871,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "scroll-progress",
+    "lines": 35,
+    "bytes": 681,
+    "usesMotion": true,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "motion/react"
+    ]
+  },
+  {
+    "name": "backlight",
+    "lines": 34,
+    "bytes": 867,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": true,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": true,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "name": "interactive-hover-button",
+    "lines": 31,
+    "bytes": 1094,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": false,
+    "hasA11y": false,
+    "deps": [
+      "lucide-react"
+    ]
+  },
+  {
+    "name": "client-tweet-card",
+    "lines": 30,
+    "bytes": 661,
+    "usesMotion": false,
+    "usesCanvas": false,
+    "usesSVG": false,
+    "usesCSSAnim": false,
+    "usesReducer": false,
+    "isClient": true,
+    "hasA11y": false,
+    "deps": [
+      "react-tweet"
+    ]
+  }
+]
